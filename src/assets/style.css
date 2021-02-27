@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.section-score {
+    margin: 20px auto;
+    border: 3px solid hsl(217, 16%, 45%);
+    max-width: 25em;
+    width: 100%;
+    padding: 1em;
+    border-radius: 9px;
+}
+
+.title-score span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.score-results .score-result {
+    font-weight: 600;
+    border-radius: 7px;
+    max-width: 6em;
+    padding: .3em;
+    background-color: cyan;
+    color: hsl(229, 64%, 46%);
+}
+
+.score-result h1 {
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+}
+
+.icon {
+    background-color: clay !important;
+    border-radius: 50%;
+    min-height: 8em;
+    min-width: 8em;
+}
+
+.hover:hover {
+    box-shadow: 0 0 5em rgba(69, 101, 241, 9);
+}
+
+.winner{
+    box-shadow: 0 0 5em rgba(69, 101, 241, 9) !important;
+}
+
+.icon-paper {
+    border: 12px solid blue;
+}
+
+.icon-scissors {
+    border: 12px solid orange;
+}
+
+.icon-rock {
+    border: 12px solid red;
+}
+
+.button-rules {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2em;
+}
+
+.result {
+    margin: 0 auto;
+    max-width: 18em;
+    width: 100%;
+    justify-content: space-end;
+}
+
+.result span {
+    font-weight: 700;
+}
+
+.modal-title {
+    color: hsl(237, 49%, 15%);
+    font-weight: 600;
+}
+
+.section-final h1 {
+    font-weight: 700;
+}
+
+.section-final button {
+    font-weight: 600;
+    max-width: 12em;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.modal-body {
+    margin: 0 auto;
+}
+
+@media(max-width:500px) {
+    .button-rules {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width:320px) {
+    .button-rules {
+        position: inherit;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        display: -webkit-box;
+    }
+}
